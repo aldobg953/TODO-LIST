@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Duper TO-DO!</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+        <header>
+            <h1 class="text-8xl font-extrabold leading-tight mb-8">Super Duper
+                <span class="text-red">TO-DO!</span>
+            </h1>
+        </header>
+
+        <div class="mx-auto px-12">
+
+            <div class="todo-app todo-container">
+                <h2 class="text-5xl font-bold leading-tight flex items-center justify-center mb-6">
+                    <span>To-Do List</span>
+                    <i class="fi fi-rr-to-do ml-4"></i>
+                </h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Añadir tarea" autocomplete="false">
+                    <button onclick="addTask()"
+                        class="">
+                        <i class="fi-rr-add" id="icon-button"></i>
+                    </button>
+                </div>
+                <ul id="list-container">
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+
+</body>
+
+</html>
